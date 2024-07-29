@@ -1,16 +1,22 @@
-@import "./base/variable";
+// 輔助型樣式 helper/
+@import "./helper/variable";
+@import "./helper/mixin";
+@import "./helper/utils";
 
+// 第三方套件 venders/
+
+
+// 基本樣式設定 base/
 @import "./base/reset";
 @import "./base/base";
 @import "./base/fontStyle";
 
-@import "utils/utilities";
+// 共用版型 layout/
+@import "./layout/header";
+@import "./layout/footer";
 
-@import "components/button";
+// 共用元件 components/
+@import "./components/button";
 
-
-@import './layout/header';
-@import './layout/footer';
-
-
-@import './pages/index';
+// 只針對某一頁 pages/
+@import "./pages/index";

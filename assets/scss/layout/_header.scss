@@ -7,14 +7,12 @@
             h1{
                 font-size: 0;
                 a{
-                    background-image: url("../assets/images/logo-white.png");
+                    background-image: url("../images/logo-white.png");
                     background-repeat: no-repeat;
                     background-size: contain;
                     width: 80px;
                     height: 49px;
-                    text-indent: 101%;          // 首行縮排，把文字推出 h1 之外
-                    overflow: hidden;           // 將溢出區塊的部分都隱藏起來
-                    white-space: nowrap;        //不換行
+                    @include hide-text;
                 }
             }
         }

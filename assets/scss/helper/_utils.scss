@@ -4,18 +4,14 @@
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
-}
-// 平板尺寸
-@media (max-width:992px) {
-    .container{
+
+    @include pad{
         max-width: 720px;   // 696+24 = 720
     }
-}
-// Mobile 尺寸
-@media (max-width:576px) {
-    .container{
+    @include mobile{
         max-width: 372px;   // 348+24 = 372
     }
+
 }
 
 .container-fluid{
@@ -23,15 +19,11 @@
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
-}
-@media (max-width:992px) {
-    .container-fluid{
+    @include pad{
         padding-left: 36px;
         padding-right: 36px;
     }
-}
-@media (max-width:767px) {
-    .container-fluid{
+    @include mobile-large{
         padding-left: 0;
         padding-right: 0;
     }
@@ -42,15 +34,11 @@
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
-}
-@media (max-width:992px) {
-    .container-footer{
+    @include pad{
         padding-left: 36px;
         padding-right: 36px;
     }
-}
-@media (max-width:767px) {
-    .container-footer{
+    @include mobile-large{
         padding-left: 14px;
         padding-right: 14px;
     }
