@@ -1,4 +1,72 @@
+// header
+
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+    background-color: $bg-primary;
+    .nav{
+        .logo{
+            h1{
+                font-size: 0;
+                a{
+                    background-image: url("../assets/images/logo-white.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 80px;
+                    height: 49px;
+                    text-indent: 101%;          // 首行縮排，把文字推出 h1 之外
+                    overflow: hidden;           // 將溢出區塊的部分都隱藏起來
+                    white-space: nowrap;        //不換行
+                }
+            }
+        }
+    }
 }
+
+.menu{
+    li{
+        a{
+            font-size: $fs-2;
+            color: $font-white;
+            &:hover{
+                color: $font-hover;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu{
+        width: 100%;
+        li{
+            width: 50%;
+            a{
+                font-size: $fs-1;
+                text-align: center;
+                border: 1px solid #fff;
+                width: 100%;
+            }
+        }
+    }
+}
+// @media (max-width: 576px) {
+//     .header{
+//         .nav{
+//             flex-wrap: wrap;
+//             .logo{
+//                 padding-left: 12px;
+//             }
+//         }
+//     }
+//     .menu{
+//         width: 100%;
+//         flex-wrap: wrap;
+//         li{
+//             width: 50%;
+//             a{
+//                 font-size: $fs-1;
+//                 text-align: center;
+//                 border: 1px solid #fff;
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }

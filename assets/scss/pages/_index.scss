@@ -1,3 +1,173 @@
-.index-title {
-  font-size: 100px;
+// 區塊：Banner
+
+.banner{
+  background-image: url("../assets/images/home-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.slogan{
+  text-align: right;
+  height: 100%;
+  h2{
+      font-size: $fs-4;
+      color: $font-secondary;
+      span{
+          font-size: $fs-6;
+          font-weight: 800;
+      }
+  }
+}
+@media (max-width:576px) {
+  .banner{
+      background-image: url("../assets/images/home-header-sm.png");
+      height: calc(100vh - 180px);
+  }
+  .slogan{
+      h2{
+          font-size: $fs-1;
+          color: $font-secondary;
+          span{
+              font-size: $fs-3;
+              font-weight: 800;
+          }
+      }
+  }
+}
+
+// 共用：區塊標題
+.title{
+  font-size: $fs-5;
+  font-weight: 800;
+  text-align: center;
+  @media (max-width:576px) {
+      font-size: $fs-3;
+  }
+}
+.title-primary{
+  color: $font-secondary;
+}
+.title-light{
+  color: $font-white;
+}
+
+
+
+// 區塊：特色
+.feature{
+  background-color: $bg-secondary;
+}
+.feature-item{
+  .feature-item-img{
+      width: 100px;
+      height: auto;
+  }
+  .feature-item-title{
+      font-size: $fs-3;
+      color: $font-secondary;
+      font-weight: 800;
+  }
+}
+
+
+// 區塊：經典系列鏡框
+.optical-item{
+  .optical-item-title{
+      font-size: $fs-5;
+      color: $font-primary;
+      font-weight: 800;
+      font-style: italic;
+      text-align: center;
+  }
+}
+@media (max-width:992px) {
+  .optical-list{
+      // flex-direction: column;
+      li{
+          margin: 0 auto;
+      }
+  }
+}
+
+// 區塊：聯名設計鏡框
+.co-branding{
+  background-image: url("../assets/images/index-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:992px) {
+  .co-branding{
+      background-image: url("../assets/images/index-bg-md.png");
+  }
+}
+@media (max-width:576px) {
+  .co-branding{
+      background-image: url("../assets/images/index-bg-sm.png");
+  }
+}
+
+.co-brand-title{
+  font-size: $fs-5;
+  color: $font-primary;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  background-color: $bg-white;
+}
+
+// 區域：顧客推薦
+
+.recommend-item{
+  border: 1px solid $light-gary;
+  box-shadow: 0px 2px 6px #00000029;
+  
+  .recommend-item-content{
+      min-height: 205px;
+      time{
+          display: block;
+          font-size: $fs-0;
+          color: $font-dark-gray;
+      }
+  }
+}
+
+// 區塊：聯絡我們
+.contact{
+  background-color: $bg-secondary;
+}
+.contact-intro{
+  font-size: $fs-2;
+}
+@media (max-width:992px) {
+  .contact-intro{
+      font-size: $fs-1;
+  }    
+}
+.contact-content{
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width:992px) {
+  .contact-content{
+      width: 80%;
+  }  
+}
+@media (max-width:576px) {
+  .contact-content{
+      width: 100%;
+  }  
+}
+
+.feeback-textarea{
+  width: 100%;
+  height: 136px;
+}
+.check-privacy{
+  .privacy-checkbox{
+      width: 24px;
+      height: 24px;
+      margin: 0;
+  }
 }

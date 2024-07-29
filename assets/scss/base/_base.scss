@@ -1,0 +1,19 @@
+// 客製化全站設定
+
+// 全域 border box
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap; // 文字不換行
+}

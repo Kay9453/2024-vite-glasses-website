@@ -1,0 +1,295 @@
+
+.container{
+    max-width: 1320px;  // 1296+24=1320，因為要讓左右邊有間距不貼齊
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+// 平板尺寸
+@media (max-width:992px) {
+    .container{
+        max-width: 720px;   // 696+24 = 720
+    }
+}
+// Mobile 尺寸
+@media (max-width:576px) {
+    .container{
+        max-width: 372px;   // 348+24 = 372
+    }
+}
+
+.container-fluid{
+    max-width: 1320px;  // 1296+24=1320，因為要讓左右邊有間距不貼齊
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+@media (max-width:992px) {
+    .container-fluid{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+@media (max-width:767px) {
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-footer{
+    max-width: 1320px;  // 1296+24=1320，因為要讓左右邊有間距不貼齊
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+@media (max-width:992px) {
+    .container-footer{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+@media (max-width:767px) {
+    .container-footer{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+// Flex 排版
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-start{
+    align-items: flex-start;
+}
+.items-center{
+    align-items: center;
+}
+.items-end{
+    align-items: flex-end;
+}
+
+// Flex 間距
+.gap-1{
+    gap: 4px;
+}
+.gap-4{
+    gap: 16px;
+}
+.gap-8{
+    gap: 32px;
+}
+.gap-12{
+    gap: 48px;
+}
+.gap-16{
+    gap: 64px;
+}
+
+@media (max-width:992px) {
+    .flex-md-column{
+        flex-direction: column;
+    }
+    .gap-md-6{
+        gap: 24px;
+    }
+
+    .gap-md-4{
+        gap: 16px;
+    }
+}
+
+@media (max-width:767px) {
+    .flex-sm-column{
+        flex-direction: column;
+    }
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+    }
+    .gap-sm-2{
+        gap: 8px;
+    }
+    .gap-sm-0{
+        gap: 0;
+    }
+}
+
+
+// 間距
+// md：>= 992px；sm：>=767px；xs：>=576px
+
+// padding 上下左右
+.p-4{
+    padding: 16px;
+}
+
+
+
+// padding top
+.pt-3{
+    padding-top: 12px;
+}
+.pt-4{
+    padding-top: 16px;
+}
+.pt-8{
+    padding-top: 32px;
+}
+.pt-12{
+    padding-top: 48px;
+}
+.pt-20{
+    padding-top: 80px;
+}
+
+// padding bottom
+.pb-2{
+    padding-bottom: 8px;
+}
+.pb-3{
+    padding-bottom: 12px;
+}
+.pb-4{
+    padding-bottom: 16px;
+}
+.pb-6{
+    padding-bottom: 24px;
+}
+.pb-8{
+    padding-bottom: 32px;
+}
+.pb-12{
+    padding-bottom: 48px;
+}
+.pb-14{
+    padding-bottom: 56px;
+}
+.pb-20{
+    padding-bottom: 80px;
+}
+.pr-4{
+    padding-right: 16px;
+}
+
+// margin
+.mr-auto{
+    margin-right: auto;
+}
+.mr-1{
+    margin-right: 4px;
+}
+.mb-2{
+    margin-bottom: 8px;
+}
+
+.mb-4{
+    margin-bottom: 16px;
+}
+@media (max-width:992px) {
+    .pb-md-6{
+        padding-bottom: 24px;
+    }
+    .pb-md-10{
+        padding-bottom: 40px;
+    }
+    .pb-md-14{
+        padding-bottom: 56px;
+    }
+}
+@media (max-width:767px) {
+    .pl-sm-3{
+        padding-left: 12px;
+    }
+    .pr-sm-2{
+        padding-right: 8px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .pt-xs-5{
+        padding-top: 20px;
+    }
+    .pt-xs-6{
+        padding-top: 24px;
+    }
+    .pt-xs-10{
+        padding-top: 40px;
+    }
+    .pb-xs-4{
+        padding-bottom: 16px;
+    }
+    .pb-xs-5{
+        padding-bottom: 20px;
+    }
+    .pb-xs-6{
+        padding-bottom: 24px;
+    }
+    .pb-xs-10{
+        padding-bottom: 40px;
+    }
+    .mr-xs-2{
+        padding-right: 8px;
+    }
+}
+
+
+// 共用：格線系統
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-3{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-4{
+    width: 33.33333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width:992px) {
+    .col-md-6{
+        width: 50%;
+    }
+}
+@media (max-width:576px) {
+    .col-xs-12{
+        width: 100%;
+    }
+}
+
+
+
+// Input、Textarea 樣式
+input ,textarea{
+    padding: 6px 12px;
+}
+
+::placeholder{
+    color: #000;
+    opacity: 0.2;
+}
+
+

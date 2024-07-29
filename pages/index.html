@@ -5,15 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <div class="wrap">
+      <!-- header -->
+      <%- include('./layout/header'); %>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+      <main class="main">
+          <div class="banner">
+              <div class="slogan container d-flex flex-column justify-center items-end">
+                  <h2>Promise-Desert 2020 早春系列<br/><span>看得清，才能看得遠</span></h2>
+                  <a class="btn btn-primary" href="#">立即購買</a>
+              </div>
+          </div>
+          <div class="feature">
+              <h3 class="title title-primary pt-20 pb-6 pt-xs-10">用專業的心，做專業的事</h3>
+              <div class="container">
+                  <ul class="row feature-list pb-20 pb-xs-10">
+                      <li class="col-3 col-md-6 col-xs-12 pb-md-6 pb-xs-6">
+                          <div class="feature-item d-flex flex-column items-center">
+                              <img class="feature-item-img mb-4" src="../assets/images/home-section2-1.png" alt="單一價格">
+                              <h4 class="feature-item-title mb-2">單一價格</h4>
+                              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+                          </div>
+                      </li>
+                      <li class="col-3 col-md-6 col-xs-12 pb-md-6 pb-xs-6">
+                          <div class="feature-item d-flex flex-column items-center">
+                              <img class="feature-item-img mb-4" src="../assets/images/home-section2-2.png" alt="20分鐘即可取件">
+                              <h4 class="feature-item-title mb-2">20 分鐘即可取件</h4>
+                              <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+                          </div>
+                      </li>
+                      <li class="col-3 col-md-6 col-xs-12 pb-xs-6">
+                          <div class="feature-item d-flex flex-column items-center">
+                              <img class="feature-item-img mb-4" src="../assets/images/home-section2-3.png" alt="安心售後服務">
+                              <h4 class="feature-item-title mb-2">安心售後服務</h4>
+                              <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                          </div>
+                      </li>
+                      <li class="col-3 col-md-6 col-xs-12">
+                          <div class="feature-item d-flex flex-column items-center">
+                              <img class="feature-item-img mb-4" src="../assets/images/home-sectioin2-4.png" alt="關於鏡片">
+                              <h4 class="feature-item-title mb-2">關於鏡片</h4>
+                              <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="optical">
+              <h3 class="title title-primary pt-20 pb-12 pt-xs-10 pb-xs-6">經典系列鏡框</h3>
+              <div class="container">
+                  <ul class="row optical-list pb-20 pb-xs-10 flex-md-column">
+                      <li class="col-4 col-md-6 col-xs-12 pb-md-6">
+                          <div class="optical-item">
+                              <img class="optical-img pb-2" src="../assets/images/home-section3-1.png" alt="optical Glasses">
+                              <h4 class="optical-item-title">OPTICAL</h4>
+                          </div>
+                      </li>
+                      <li class="col-4 col-md-6 col-xs-12 pb-md-6">
+                          <div class="optical-item">
+                              <img class="optical-img pb-2" src="../assets/images/home-section3-2.png" alt="Sunglasses Glasses">
+                              <h4 class="optical-item-title">SUNGLASSES</h4>
+                          </div>
+                      </li>
+                      <li class="col-4 col-md-6 col-xs-12">
+                          <div class="optical-item">
+                              <img class="optical-img pb-2" src="../assets/images/home-section3-3.png" alt="Functional Glasses">
+                              <h4 class="optical-item-title">FUNCTIONAL</h4>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="co-branding">
+              <div class="container">
+                  <h3 class="title title-light pt-20 pb-12 pt-xs-10 pb-xs-6">聯名設計鏡框</h3>
+                  <ul class="co-branding-list pb-20 pb-xs-10 d-flex flex-md-column gap-md-6">
+                      <li>
+                          <picture>
+                              <!-- 當螢幕寬度少於 576px 時，替換圖片 -->
+                              <source srcset="../assets/images/home-section4-1-sm.png" media="(max-width: 576px)">
+                              <!-- 預設圖片，通常是桌面版本 -->
+                              <img src="../assets/images/home-section4-1.png" alt="DOUBLE A+設計鏡框">
+                          </picture>
+                          <h4 class="co-brand-title">DOUBLE A+</h4>
+                      </li>
+                      <li>
+                          <picture>
+                              <!-- 當螢幕寬度少於 576px 時，替換圖片 -->
+                              <source srcset="../assets/images/home-section4-2-sm.png" media="(max-width: 576px)">
+                              <!-- 預設圖片，通常是桌面版本 -->
+                              <img src="../assets/images/home-section4-2.png" alt="DOUBLE A+設計鏡框">
+                          </picture>
+                          <h4 class="co-brand-title">YOUTH</h4>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="recommend">
+              <h3 class="title title-primary pt-20 pb-12 pt-xs-10 pb-xs-6">顧客推薦</h3>
+              <div class="container">
+                  <ul class="rows recommend-list pb-20 pb-xs-10 d-flex flex-wrap">
+                      <li class="col col-3 col-md-6 col-xs-12 pb-md-6 pb-xs-4">
+                          <div class="recommend-item">
+                              <img src="../assets/images/home-section5-1.png" alt="顧客-Jessy">
+                              <div class="recommend-item-content p-4 d-flex flex-column justify-between">
+                                  <div class="recommend-header">
+                                      <p class="pb-2">Jessy</p>
+                                      <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+                                  </div>
+                                  <time datetime="2021/06/20">2021/06/20</time>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="col col-3 col-md-6 col-xs-12 pb-md-6 pb-xs-4">
+                          <div class="recommend-item">
+                              <img src="../assets/images/home-section5-2.png" alt="顧客-凱倫">
+                              <div class="recommend-item-content p-4 d-flex flex-column justify-between">
+                                  <div class="recommend-header">
+                                      <p class="pb-2">凱倫</p>
+                                      <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                                  </div>
+                                  <time datetime="2021/04/18">2021/04/18</time>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="col col-3 col-md-6 col-xs-12 pb-xs-4">
+                          <div class="recommend-item">
+                              <img src="../assets/images/home-section5-3.png" alt="顧客-悠悠">
+                              <div class="recommend-item-content p-4 d-flex flex-column justify-between">
+                                  <div class="recommend-header">
+                                      <p class="pb-2">悠悠</p>
+                                      <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                                  </div>
+                                  <time datetime="2020/12/25">2020/12/25</time>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="col col-3 col-md-6 col-xs-12">
+                          <div class="recommend-item">
+                              <img src="../assets/images/home-section5-4.png" alt="顧客-Kyuan">
+                              <div class="recommend-item-content p-4 d-flex flex-column justify-between">
+                                  <div class="recommend-header">
+                                      <p class="pb-2">Kyuan</p>
+                                      <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+                                  </div>
+                                  <time datetime="2020/10/31">2020/10/31</time>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="contact">
+              <div class="container pb-20 pb-xs-10">
+                  <h3 class="title title-primary pt-20 pb-6 pt-xs-10">聯絡我們</h3>
+                  <div class="contact-content">
+                      <p class="contact-intro pb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+                      <form class="feedback d-flex flex-column" action="">
+                          <label for="cht-name" class="pb-2">姓名</label>
+                          <input type="text" class="mb-4" id="cht-name" name="cht-name" placeholder="陳小明" required>
+                          <label for="phone" class="pb-2">聯絡電話</label>
+                          <input type="tel" class="mb-4" id="phone" name="phone" placeholder="0912-345-678" required>
+                          <label for="mail" class="pb-2">電子郵件</label>
+                          <input type="email" class="mb-4" id="mail" name="mail" placeholder="example@email.com" required>
+                          <label for="feeback-content" class="pb-2">意見反應</label>
+                          <textarea type="text" class="feeback-textarea mb-4" id="feeback-content" name="feeback-content" placeholder="請輸入您的意見" required></textarea>
+                          <div class="check-privacy pb-12 pb-xs-6 d-flex items-start gap-1">
+                              <input type="checkbox" class="privacy-checkbox" id="privacy" name="privacy" required>
+                              <label for="privacy">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                          </div>
+                          <a href="#" class="btn btn-primary form-btn">確認送出</a>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <!-- footer -->
+      <%- include('./layout/footer'); %>
+  </div>   
 
-    <%- include('./layout/footer'); -%>
-
+    <!-- 這行不要動，Vite Dev 的核心 -->
     <script type="module" src="../main.js"></script>
   </body>
 </html>
