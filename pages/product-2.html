@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系列鏡框</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="wrap">
+        <%- include('./layout/header');-%>
+        <ul class="product-tab container-fluid d-flex">
+            <li><a class="product-tab-link py-6 py-md-4" href="product-1.html">OPTICAL</a></li>
+            <li><a class="product-tab-link product-tab-link-active py-6 py-md-4" href="product-2.html">SUNGLASSES</a></li>
+            <li><a class="product-tab-link py-6 py-md-4" href="#">FUNCTIONAL</a></li>
+        </ul>
+        <div class="product-banner d-flex">
+            <picture>
+                <!-- 當螢幕寬度少於 576px 時，替換圖片 -->
+                <source srcset="../assets/images/product-header-sm-3.png" media="(max-width: 767px)">
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img src="../assets/images/product-header-3.png" alt="SUNGLASSES 鏡框產品 - 圖 1">
+            </picture>
+            <picture>
+                <!-- 當螢幕寬度少於 576px 時，替換圖片 -->
+                <source srcset="../assets/images/product-header-sm-4.png" media="(max-width: 767px)">
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img src="../assets/images/product-header-4.png" alt="SUNGLASSES 鏡框產品 - 圖 2">
+            </picture>
+        </div>
+        <div class="product-list">
+            <h3 class="product-list-title pt-20 pb-8 pt-xs-10 pb-xs-6">2020 NEW COLLECTION<br/><span class="product-list-title-cht">賽璐珞鈦金屬混合鏡框</span></h3>
+            <div class="container">
+                <ul class="row">
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-md-10 pb-xs-6">
+                        <div class="card">
+                            <img src="../assets/images/product-7.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-md-10 pb-xs-6">
+                        <div class="card">
+                            <img src="../assets/images/product-8.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-md-10 pb-xs-6">
+                        <div class="card">
+                            <img src="../assets/images/product-9.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-md-10 pb-xs-6">
+                        <div class="card">
+                            <img src="../assets/images/product-10.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-xs-6">
+                        <div class="card">
+                            <img src="../assets/images/product-11.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-4 col-md-6 col-xs-12 pb-20 pb-xs-16">
+                        <div class="card">
+                            <img src="../assets/images/product-12.png" alt="">
+                            <div class="d-flex justify-between">
+                                <h4 class="product-type">BJ41600S</h4>
+                                <span class="product-price">NTD3,490</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="color-type color-block-darken"></span>
+                                <span class="color-type color-block"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="pagination d-flex justify-center pb-20 pb-xs-16">
+            <li><a class="pagination-link p-3 prev" href="#">上一頁</a></li>
+            <li><a class="pagination-link p-3" href="#">1</a></li>
+            <li><a class="pagination-link p-3 link-active" href="#">2</a></li>
+            <li><a class="pagination-link p-3" href="#">3</a></li>
+            <li><a class="pagination-link p-3" href="#">4</a></li>
+            <li><a class="pagination-link p-3" href="#">5</a></li>
+            <li><a class="pagination-link p-3 next" href="#">下一頁</a></li>
+        </ul>
+
+
+        <%- include('./layout/footer'); %>
+    </div>
+    <!-- 這行不要動，Vite Dev 的核心 -->
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

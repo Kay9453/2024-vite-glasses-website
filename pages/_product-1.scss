@@ -1,0 +1,91 @@
+.product-tab{
+    font-size:$fs-4;
+    font-weight: $fw-medium;
+    @include pad{
+        font-size: $fs-3;
+    }
+    @include mobile{
+        font-size: $fs-1;
+    }
+    li{
+        width: 33.33333%;
+        border: 1px solid #DCDCDC;
+    }
+}
+.product-tab-link{
+    text-align: center;
+    width: 100%;
+    border-bottom: 8px solid transparent;
+    &:hover{
+        border-bottom: 8px solid $primary;
+    }
+}
+.product-tab-link-active{
+    border-bottom: 8px solid $primary;
+}
+.product-banner{
+    picture{
+        width: 50%;
+    }
+}
+.product-list-title{
+    text-align: center;
+    font-size: $fs-6;
+    font-weight: $fw-medium;
+    @include mobile{
+        font-size: $fs-3;
+    }
+}
+.product-list-title-cht{
+    font-size: $fs-4;
+    @include mobile{
+        font-size: $fs-3;
+        font-weight: $fw-regular;
+    }
+}
+
+.product-type{
+    font-size: $fs-3;
+}
+.product-price{
+    font-size: $fs-3;
+    color: $font-primary;
+    font-weight: $fw-medium;
+}
+
+.color-type{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+.color-block-darken{
+    background-color: #5F3E2D;
+}
+.color-block{
+    background-color: #B75929;   
+}
+
+// 分頁
+.pagination{
+    .next{
+        background-color: #F2F2F2;
+    }
+    .link-active{
+        color: $font-white;
+        background-color: #000;
+    }
+}
+
+
+.pagination-link{
+    font-size: $fs-1a;
+    color: #555555;
+    border: 1px solid #555555;
+    @include mobile{
+        font-size: $fs-1;
+    }
+    &:hover{
+        color: $font-white;
+        background-color: #000;
+    }
+}

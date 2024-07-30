@@ -17,7 +17,7 @@
   height: 100%;
 }
 .slogan-title{
-  font-size: $fs-4;
+  font-size: $fs-5;
   color: $font-secondary;
   @include mobile{
     font-size: $fs-1;
@@ -25,7 +25,7 @@
   }
 }
 .slogan-subtitle{
-  font-size: $fs-6;
+  font-size: $fs-8;
   font-weight: 800;
   @include mobile{
     font-size: $fs-3;
@@ -35,7 +35,7 @@
 
 // 共用：區塊標題
 .title{
-  font-size: $fs-5;
+  font-size: $fs-7;
   font-weight: 800;
   text-align: center;
   @include mobile{
@@ -71,7 +71,7 @@
 // 區塊：經典系列鏡框
 .optical-item{
   .optical-item-title{
-      font-size: $fs-5;
+      font-size: $fs-7;
       color: $font-primary;
       font-weight: 800;
       font-style: italic;
@@ -101,7 +101,7 @@
 }
 
 .co-brand-title{
-  font-size: $fs-5;
+  font-size: $fs-7;
   color: $font-primary;
   font-weight: 800;
   font-style: italic;

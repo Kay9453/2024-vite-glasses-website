@@ -14,7 +14,7 @@
 
 }
 
-.container-fluid{
+.container-header{
     max-width: 1320px;  // 1296+24=1320，因為要讓左右邊有間距不貼齊
     margin: 0 auto;
     padding-left: 12px;
@@ -43,6 +43,20 @@
         padding-right: 14px;
     }
 }
+
+.container-fluid{
+    max-width: 1320px;  // 1296+24=1320，因為要讓左右邊有間距不貼齊
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
 
 // Flex 排版
 
@@ -77,6 +91,9 @@
 // Flex 間距
 .gap-1{
     gap: 4px;
+}
+.gap-2{
+    gap: 8px;
 }
 .gap-4{
     gap: 16px;
@@ -124,8 +141,17 @@
 // md：>= 992px；sm：>=767px；xs：>=576px
 
 // padding 上下左右
+.p-3{
+    padding: 12px;
+}
 .p-4{
     padding: 16px;
+}
+
+
+.py-6{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -137,6 +163,7 @@
 .pt-4{
     padding-top: 16px;
 }
+
 .pt-8{
     padding-top: 32px;
 }
@@ -200,6 +227,10 @@
     .pb-md-14{
         padding-bottom: 56px;
     }
+    .py-md-4{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 @media (max-width:767px) {
     .pl-sm-3{
@@ -232,6 +263,9 @@
     }
     .pb-xs-10{
         padding-bottom: 40px;
+    }
+    .pb-xs-16{
+        padding-bottom: 64px;
     }
     .mr-xs-2{
         padding-right: 8px;
