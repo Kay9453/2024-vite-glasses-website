@@ -33,23 +33,6 @@
   }
 }
 
-// 共用：區塊標題
-.title{
-  font-size: $fs-7;
-  font-weight: 800;
-  text-align: center;
-  @include mobile{
-    font-size: $fs-3;
-  }
-}
-.title-primary{
-  color: $font-secondary;
-}
-.title-light{
-  color: $font-white;
-}
-
-
 
 // 區塊：特色
 .feature{

@@ -1,0 +1,83 @@
+// 上方 nav
+.blog-nav-bg{
+    background-color: $secondary;
+    // @include mobile{
+    //     display: none;
+    // }
+}
+
+.blog-nav{
+    a{
+        color: $font-white;
+        font-size: $fs-2;
+        font-weight: $fw-bold;
+        padding: 12px 0;
+        text-wrap: wrap;
+        @include mobile-large{
+            font-size: $fs-1;
+        }
+        &:hover{
+            color: $font-hover;
+        }
+    }
+}
+.search-icon{
+    a{
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        font-weight: $fw-regular;
+    }   
+}
+
+// 部落格文章列表
+
+.blog-list-pic{
+    object-fit: cover;
+}
+
+.blog-list-title{
+    font-size: $fs-4;
+    color: $font-secondary;
+    @include pad{
+        font-size: $fs-3;
+    }
+}
+.blog-list-subtitle{
+    font-size: $fs-2;
+    @include pad{
+        font-size: $fs-1;
+    }
+}
+.blog-list-date{
+    opacity: 0.7;
+}
+.blog-list-intro{
+    font-size: $fs-2;
+    color: #555555;
+    @include pad{
+        font-size: $fs-1;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.more-link{
+    color: $font-secondary;
+    font-size: $fs-5;
+    font-weight: $fw-black;
+    text-align: right;
+    @include pad{
+        display: none;
+    }
+}
+.blog-passage-link{
+    display: none;
+    @include pad{
+        display:inline;
+        color: #555555;
+    }
+    &:hover{
+        font-weight: $fw-bold;
+    }
+}

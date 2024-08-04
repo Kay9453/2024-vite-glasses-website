@@ -1,0 +1,93 @@
+.breadcrumbs{
+    a{
+        &:hover{
+            color: $font-primary;
+            text-decoration: underline;
+        }
+    }
+}
+
+.breadcrumbs-active{
+    color: $font-primary;
+}
+.page-tag{
+    font-size: $fs-3;
+    color: $font-primary;
+    font-weight: $fw-bold;
+    @include mobile{
+        font-size: $fs-1;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.blog-title{
+    font-size: $fs-7;
+    @include mobile{
+        font-size: $fs-3;
+    }
+}
+.blog-subtitle{
+    font-size: $fs-3;
+    @include mobile{
+        font-size: $fs-1;
+    }
+}
+.article-content{
+    color: #555555;
+}
+
+// Tags
+.tags-list{
+    color: $font-primary;
+    font-weight: $fw-bold;
+    @include mobile{
+        display: none;
+    }
+}
+.tags-title{
+    font-size: $fs-4;
+
+    @include pad{
+        font-size: $fs-1;
+    }
+    span{
+        font-size: $fs-7;
+        @include pad{
+            font-size: $fs-3;
+        }
+    }
+}
+.tag{
+    color: $font-primary;
+    font-weight: $fw-bold;
+    font-size: $fs-3;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    @include pad{
+        font-size: $fs-1;
+        margin-right: 4px;
+        margin-bottom: 0;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.share-title{
+    color: #0A0A0A;
+    font-weight: $fw-bold;
+}
+.share-list{
+    li{
+        width: 24px;
+        height: 24px;
+    }
+}
+.page-link{
+    span{
+        font-size: $fs-3;       
+    }
+    &:hover{
+        font-weight: $fw-bold;
+    }
+}

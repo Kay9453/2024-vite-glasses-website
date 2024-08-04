@@ -1,0 +1,58 @@
+.select-location{
+    font-size: $fs-3;
+    white-space: nowrap;
+    @include mobile{
+        font-size: $fs-1;
+    }
+}
+.location-list{
+    font-size: $fs-1a;
+    padding: 6px 12px;
+    width: 304px;
+}
+.select-location-sec{
+    @include mobile{
+        width: 100%;
+    }
+}
+.store-name{
+    font-size: $fs-3;
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+}
+.store-info{
+    border: 1px solid #00000020;
+    font-size: $fs-2;
+    padding: 16px 24px;
+}
+.detail-btn{
+    background-color: #000;
+    color: $font-white;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+    font-size: $fs-1b;
+    &:hover{
+        background-color: darken($primary, 0.3);
+    }
+}
+
+// 店鋪內頁
+.location-map{
+    width: 100%;
+    height: 100%;
+    @include pad{
+        height: 414px;
+    }
+    @include mobile{
+        height: 208px;
+    }
+}
+.store-pic{
+    @include pad{
+        max-width: 50%;
+    }
+    @include mobile-large{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.qa-desc{
+    font-size: $fs-3;
+    font-weight: $fw-bold;
+}
+.qa-list{
+    width: 66.66666%;
+    @include pad{
+        width: 100%;
+    }
+}
+.qa-q{
+    font-size: $fs-2;
+    font-weight: $fw-bold;
+}
