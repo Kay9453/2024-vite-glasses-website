@@ -75,6 +75,7 @@
   background-image: url("../images/index-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   @include pad{
     background-image: url("../images/index-bg-md.png");
   }

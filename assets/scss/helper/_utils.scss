@@ -482,6 +482,8 @@
 // Input、Textarea 樣式
 input ,textarea{
     padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid #000;
 }
 
 ::placeholder{
